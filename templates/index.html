@@ -1,0 +1,33 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block content %}
+    <style>
+        body {
+            background-image: url('{% static "library_background.jpg" %}');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                    <div class="card-header bg-transparent text-center">
+                        <h2 class="text-dark text-primary">Welcome to the Library Management System</h2>
+                    </div>
+                    <div class="card-body">
+                        <p class="lead text-center text-secondary text-gray">Explore our extensive collection and manage your library with ease!</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
